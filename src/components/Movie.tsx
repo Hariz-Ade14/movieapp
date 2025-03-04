@@ -17,6 +17,8 @@ const Movie: React.FC<MovieProps> = ({ poster, title, releaseDate, rating}) => {
                 src={poster}
                 alt={`${title} poster`}
                 className="w-full md:w-64 h-auto object-contain bg-gray-100"
+                width={400}
+                height={400}
               />
             ) : (
               <div className="w-full md:w-64 h-64 flex items-center justify-center bg-gray-100 text-gray-500">
