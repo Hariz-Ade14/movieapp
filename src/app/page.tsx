@@ -21,7 +21,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const searchMovie = async (e: any) => {
+  const searchMovie = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!query.trim()) {

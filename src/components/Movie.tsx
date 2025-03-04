@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 interface MovieProps {
@@ -12,7 +13,7 @@ const Movie: React.FC<MovieProps> = ({ poster, title, releaseDate, rating}) => {
     <div className="my-8 border border-gray-200 rounded-lg overflow-hidden shadow-md mx-4">
           <div className="flex flex-col md:flex-row">
             {poster && poster !== "N/A" ? (
-              <img
+              <Image
                 src={poster}
                 alt={`${title} poster`}
                 className="w-full md:w-64 h-auto object-contain bg-gray-100"

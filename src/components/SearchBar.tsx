@@ -1,9 +1,9 @@
 import React from 'react'
 
 type SearchBarProps = {
-    searchMovie: (e: any) => void;
+    searchMovie: (e: React.FormEvent) => void;
     query: string;
-    setQuery: (e: any) => void;
+    setQuery: (value: string) => void;
     loading: boolean;
 }
 const SearchBar: React.FC<SearchBarProps> = ({ searchMovie, query, setQuery, loading }) => {
